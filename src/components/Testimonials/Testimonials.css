@@ -1,0 +1,82 @@
+.testi {
+  position: relative;
+  padding: 100px 0;
+  background-image: url("../../assets//testimonials.png");
+  background-size: cover;
+}
+
+.testi h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.articals {
+  position: relative;
+  padding: 100px 0;
+}
+
+.articals h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.parteners {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--theme-color);
+}
+
+.parteners h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.parte .swiper-slide {
+  padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+  .testi {
+    padding: 50px 0;
+  }
+
+  .testi h2 {
+    margin-bottom: 30px;
+  }
+
+  .articals {
+    padding: 50px 0;
+  }
+
+  .articals h2 {
+    margin-bottom: 30px;
+  }
+
+  .parteners {
+    padding: 50px 0;
+  }
+
+  .parteners h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimon .swiper-pagination-bullets {
+    bottom: 25px;
+  }
+
+  .art .swiper-pagination-bullets {
+    bottom: 55px;
+  }
+
+  .parte .swiper-pagination-bullets {
+    bottom: 35px;
+  }
+}

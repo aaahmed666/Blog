@@ -1,0 +1,192 @@
+.footer {
+  padding: 70px 0;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: calc(25% + 30px);
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-link img {
+  max-width: 100%;
+}
+
+.about p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.social {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  background-color: #3a4882;
+  color: #fff;
+  border-radius: 50%;
+  margin-inline-end: 5px;
+}
+
+.social > li > a:hover {
+  background-color: var(--main-color);
+}
+
+.social > li > a > svg {
+  width: 16px;
+  height: 16px;
+  color: var(--white);
+}
+
+.links {
+  padding: 0 15px;
+}
+
+.title {
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: var(--main-color);
+  display: block;
+  margin-top: 15px;
+}
+
+.footer-services {
+  width: calc(50% + 30px);
+}
+
+.last {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.last > li {
+  width: 50%;
+}
+
+.last > li:nth-child(even) {
+  padding-right: 30px;
+}
+
+.last > li > a {
+  color: #8bb1ff;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.last > li > a:hover {
+  color: var(--white);
+}
+
+.title svg {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .title svg {
+    display: inline-block;
+  }
+
+  .title svg.open {
+    transform: rotate(180deg);
+  }
+
+  .about {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .links {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .footer-services {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .last {
+    display: none;
+  }
+
+  .list.open {
+    display: flex;
+  }
+
+  .last.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .title::after {
+    display: none;
+  }
+
+  .list > li > a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .last > li > a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .last > li {
+    width: 100%;
+  }
+
+  .last > li:nth-child(even) {
+    padding: 0;
+  }
+}

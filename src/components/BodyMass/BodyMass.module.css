@@ -1,0 +1,27 @@
+.divid {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--theme-color);
+}
+
+.cut {
+  display: flex;
+}
+
+.body-mass {
+  width: 50%;
+  margin-inline-end: 12.5%;
+}
+
+.choose-form {
+  width: 50%;
+}
+
+@media (max-width: 1199px) {
+  .cut {
+    flex-direction: column;
+  }
+}

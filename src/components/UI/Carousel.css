@@ -1,0 +1,19 @@
+.main .swiper-pagination {
+  bottom: 50px;
+}
+
+.main .swiper-pagination-bullet {
+  width: 15px;
+  height: 5px;
+  border-radius: 4px;
+}
+
+.main .swiper-pagination-bullet-active {
+  background-color: var(--white);
+}
+
+@media (max-width: 576px) {
+  .main .swiper-pagination {
+    bottom: 10px;
+  }
+}

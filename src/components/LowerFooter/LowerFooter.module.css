@@ -1,0 +1,44 @@
+.lower {
+  background-color: #1f2b63;
+  padding: 10px 0;
+  color: var(--white);
+}
+
+.copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrights p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.copyrights svg {
+  width: 16px;
+  height: 16px;
+  color: red;
+}
+
+.copyrights a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1abcbc;
+}
+
+.copyrights a:hover {
+  color: #1abcbc;
+}
+
+@media (max-width: 767px) {
+  .copyrights {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .copyrights p {
+    font-size: 12px;
+  }
+}

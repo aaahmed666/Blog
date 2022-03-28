@@ -1,0 +1,27 @@
+.link {
+  width: 176px;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--white);
+  overflow: hidden;
+  margin: auto;
+}
+
+.link img {
+  max-width: 100%;
+}
+
+.link:hover {
+  box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 767px) {
+  .link {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+}

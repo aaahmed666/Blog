@@ -1,0 +1,38 @@
+.box {
+  box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.link {
+  display: block;
+}
+
+.link img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.date {
+  color: #828282;
+  padding: 23px 26px 14px;
+}
+
+.head {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 0 30px;
+  color: var(--primary-color);
+  min-height: 50px;
+}
+
+.subtitle {
+  font-weight: 400;
+  padding: 25px 28px;
+  color: var(--primary-color);
+  line-height: 26px;
+  min-height: 100px;
+  text-align: justify;
+}

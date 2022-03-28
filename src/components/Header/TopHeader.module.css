@@ -1,0 +1,139 @@
+.top-header {
+  background-color: var(--main-color);
+  padding: 6px 0;
+}
+
+.top-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail,
+.call {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail {
+  margin-inline-start: 20px;
+}
+
+.mail a,
+.call a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+.mail a:hover,
+.call a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mail .icon,
+.call .icon {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--top-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.mail:hover .icon,
+.call:hover .icon {
+  background-color: var(--white);
+}
+
+.social svg,
+.mail svg,
+.call svg {
+  color: var(--white);
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mail:hover svg,
+.call:hover svg {
+  color: var(--top-color);
+}
+
+.mail p,
+.call p {
+  margin: 0;
+  margin-inline-start: 10px;
+  font-size: 15px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+}
+
+.social a {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: var(--top-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+  background-color: var(--white);
+}
+
+.social a:hover svg {
+  color: var(--top-color);
+}
+
+.lang {
+  margin-inline-start: 15px;
+}
+
+.lang button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .top-header-content {
+    flex-direction: column;
+  }
+
+  .contact-us {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-header {
+    display: none;
+  }
+}
